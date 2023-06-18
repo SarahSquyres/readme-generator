@@ -11,8 +11,43 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+// Triple ticks only to be used in javascript
 function generateMarkdown(data) {
   return `# ${data.title}
+
+\`\`\`javascript
+
+function init() {
+  inquirer.prompt(questions).then((inquirerResponses) => {
+    console.log('Generating README...');
+    writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+  });
+}
+
+\`\`\`
+## Description
+${data.description}
+
+## Table of Contents
+${data.table}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License
+${data.license}
+
+## Contributing
+${data.contributing}
+
+## Testing
+${data.test}
+
+## Questions
+${data.questions}
 
 `;
 }
