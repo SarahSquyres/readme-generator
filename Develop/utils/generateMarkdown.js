@@ -29,7 +29,7 @@ function init() {
 ${data.description}
 
 ## Table of Contents
-${data.table}
+* ${data.table}
 
 ## Installation
 ${data.installation}
