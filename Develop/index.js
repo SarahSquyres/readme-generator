@@ -18,11 +18,6 @@ inquirer
         },
         {
             type: 'input',
-            name: 'table',
-            message: 'List your Table of Contents'
-        },
-        {
-            type: 'input',
             name: 'installation',
             message: 'How do you install your dependencies?'
         },

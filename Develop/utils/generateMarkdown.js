@@ -29,7 +29,13 @@ function init() {
 ${data.description}
 
 ## Table of Contents
-* ${data.table}
+* [License](#license)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [How to Contribute](#how-to-contribute)
+* [Tests](#tests)
+* [Questions?](#questions)
 
 ## Installation
 ${data.installation}
