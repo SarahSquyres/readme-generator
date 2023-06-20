@@ -14,7 +14,7 @@ inquirer
         {
             type: 'input',
             name: 'description',
-            message: 'Describe your project'
+            message: 'Describe your project:'
         },
         {
             type: 'input',
@@ -35,7 +35,7 @@ inquirer
         {
             type: 'input',
             name: 'contributing',
-            message: 'Who contributed to the project?'
+            message: 'How do you contribute to this project?'
         },
         {
             type: 'input',
@@ -45,7 +45,17 @@ inquirer
         {
             type: 'input',
             name: 'questions',
-            message: 'Possible questions from users'
+            message: 'Possible questions from users:'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "What's your email?"
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: "What's your GitHub username?"
         },
     ]) 
 

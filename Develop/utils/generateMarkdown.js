@@ -1,6 +1,11 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license !== 'None') {
+    return `[![GitHub License](https://img.shields.io/badge/license-${license}-yellow.svg)](https://opensource.org/licenses/)`;
+  }
+  return '';
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -11,31 +16,21 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-// Triple ticks only to be used in javascript
 function generateMarkdown(data) {
   return `# ${data.title}
-
-\`\`\`javascript
-
-function init() {
-  inquirer.prompt(questions).then((inquirerResponses) => {
-    console.log('Generating README...');
-    writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
-  });
-}
-
-\`\`\`
-## Description
-${data.description}
+  ${renderLicenseBadge(data.license)}
 
 ## Table of Contents
-* [License](#license)
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [License](#license)
 * [How to Contribute](#how-to-contribute)
-* [Tests](#tests)
-* [Questions?](#questions)
+* [Testing](#tests)
+* [Questions](#questions)
+
+## Description
+${data.description}
 
 ## Installation
 ${data.installation}
@@ -46,7 +41,7 @@ ${data.usage}
 ## License
 ${data.license}
 
-## Contributing
+## How to Contribute
 ${data.contributing}
 
 ## Testing
@@ -55,6 +50,10 @@ ${data.test}
 ## Questions
 ${data.questions}
 
+Please feel free to email me at: ${data.email} 
+
+Check out my GitHub repos!
+Here's the link to my GitHub: [${data.github}](https://github.com/${data.github}/)
 `;
 }
 
