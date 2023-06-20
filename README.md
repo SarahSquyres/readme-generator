@@ -29,7 +29,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
 
 ## Usage
 
-![Video Demo](https://drive.google.com/file/d/1ERXn8-cRmDUHD6Ket9tqrEGAc5wIowdK/view)
+[Video Demo](https://drive.google.com/file/d/1ERXn8-cRmDUHD6Ket9tqrEGAc5wIowdK/view)
 
 Usage for this application is simple.  Run the command: node index.js, as shown in the video.  Answer the prompts and the README will generate for the user.
 
